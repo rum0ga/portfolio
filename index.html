@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Rubén Moreno</title>
+
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+
+
+    <!--Estilos-->
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="estilos/estilos.css">
+
+    <link rel="stylesheet" href="tipografias/cascadia-code.css">
+
+    <!--Iconos-->
+
+    <script src="https://kit.fontawesome.com/7226b276db.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+        <video loop muted autoplay>  
+        <source src="videos/fondo1.mp4" type="video/mp4">
+    </video>
+
+<header>
+
+    <img src="imagenes/logo.svg" class="r" alt="R">
+
+    <nav id="menu">
+        <ul>
+            <li><a href="#quien-soy">¿Quién soy?</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <nav id="menuDesplegable">
+      <ul>
+          <li><a onclick="abrirmenu()" href="#"><i class="fa-solid fa-bars"></i></a></li>
+          <li><a onclick="abrirmenu()" href="#quien-soy">¿Quién soy?</a></li>
+          <li><a onclick="abrirmenu()" href="#proyectos">Proyectos</a></li>
+          <li><a onclick="abrirmenu()" href="#contacto">Contacto</a></li>
+      </ul>
+  </nav>
+
+    <div id="arriba"></div>
+
+    <div class="vacio"></div>
+</header>
+
+<section id="caja-presentacion">
+    <p class="textos-html html-color">&lt;html&gt;</p>
+    <p class="textos-html html-color body">&lt;body&gt;</p>
+
+    <p class="textos-html">&lt;h1&gt;</p>
+    <h1>Hello World!</h1>
+    <p class="textos-html">&lt;/h1&gt;</p>
+
+    <p class="textos-html">&lt;h2&gt;</p>
+    <h2>Soy Rubén Moreno, Diseñador Gráfico especializado en Desarrollo Web Front-end y Marketing Digital.</h2>
+    <p class="textos-html">&lt;/h2&gt;</p>
+
+      <section id="quien-soy">
+
+    <p class="textos-html section">&lt;section&gt;</p>
+
+    <h1 data-aos="zoom-in" data-aos-duration="1500">¿Quién soy?</h1>
+
+    <div class="informacion">
+
+        <p class="text-info" data-aos="fade-right" data-aos-duration="1500">Mi nombre es Rubén Moreno y vivo en Madrid. Estudié Enseñanzas Superiores de Diseño Gráfico y me especialicé en Diseño Web y Marketing Digital realizando un máster en Aula Creactiva. Desde que empecé en el mundo del diseño gráfico tenía claro que lo mío era el diseño web front-end, es lo que realmente me apasiona y estoy dispuesto a seguir aprendiendo siempre que pueda sobre este mundo para poder dar lo mejor de mí mismo.</p>
+
+        <img class="retrato" src="imagenes/retrato.png" alt="" data-aos="fade-left" data-aos-duration="1500">
+
+    </div>
+
+    <h3 class="titulo-habilidades"  data-aos="zoom-in" data-aos-duration="1500">Habilidades</h3>
+    <div class="skills">
+      <div class="column">
+        <div class="skill" data-aos="zoom-in" data-aos-duration="1500">
+          <div class="skill-name">HTML/CSS/JS</div>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 90%;"></div>
+          </div>
+        </div>
+        <div class="skill" data-aos="zoom-in" data-aos-duration="1500">
+          <div class="skill-name">Wordpress</div>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 70%;"></div>
+          </div>
+        </div>
+        <div class="skill" data-aos="zoom-in" data-aos-duration="1500">
+          <div class="skill-name">Adobe Creative Suite</div>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 90%;"></div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="skill" data-aos="zoom-in" data-aos-duration="1500">
+          <div class="skill-name">Habilidades de SEO</div>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 70%;"></div>
+          </div>
+        </div>
+        <div class="skill" data-aos="zoom-in" data-aos-duration="1500">
+          <div class="skill-name">Habilidades de SEM</div>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 90%;"></div>
+          </div>
+        </div>
+        <div class="skill" data-aos="zoom-in" data-aos-duration="1500">
+          <div class="skill-name">GA4/Ads/Tag Manager...</div>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 90%;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <p class="textos-html section">&lt;/section&gt;</p>
+
+    </section>
+
+    <section id="proyectos">
+
+    <p class="textos-html section">&lt;section&gt;</p>
+
+    <h1 data-aos="zoom-in" data-aos-duration="1500">Mis proyectos</h1>
+
+    <p class="texto-proyectos" data-aos="zoom-in" data-aos-duration="1500">Aquí encontrarás una selección de mis proyectos más recientes. Te invito a que eches un vistazo a cada uno de ellos y veas la creatividad y la pasión que he invertido en cada diseño.</p>
+
+    <a href="landing/index.html" target="_blank"><img class="imagen1" src="imagenes/lana-del-rey.jpg" alt="Lana del Rey" data-aos="flip-down"></a>
+    <a href="one-page/index.html" target="_blank"><img class="imagen2" src="imagenes/clash.jpg" alt="Clash Royale" data-aos="flip-down"></a>
+    <a href="minimalista/index.html" target="_blank"><img class="imagen3" src="imagenes/nervio.jpg" alt="Nervio Studio" data-aos="flip-down"></a>
+
+    <p class="textos-html section">&lt;/section&gt;</p>
+
+    </section>
+
+    <section id="frase-motivadora">
+
+    <p class="frase-motivadora" data-aos="zoom-out" data-aos-duration="1500">"En el mundo digital en constante evolución, el diseño web y el marketing digital nos desafían a pensar más allá de los límites y a crear experiencias extraordinarias."</p>
+
+    </section>
+
+<section id="contacto">
+
+  <p class="textos-html section">&lt;section&gt;</p>
+
+    <h1 data-aos="zoom-in" data-aos-duration="1500">Contacta conmigo</h1>
+
+  <p class="textos-html text-form">&lt;form&gt;</p>
+    <div class="flexContact">
+
+      <p class="texto-contacto" data-aos="fade-right" data-aos-duration="1500">¡Bienvenido a mi portfolio! Si estás buscando dar vida a tus ideas, estás en el lugar correcto. Rellena el formulario y hablemos sobre cómo podemos trabajar juntos para lograr tus objetivos.</p>
+
+    <form class="formulario1" action="enviar.php" method="post" data-aos="fade-left" data-aos-duration="1500">
+      <input class="campos" type="text" id="nombre" name="nombre" required placeholder="Nombre y apellidos">
+
+      <br><br>
+
+      <input class="campos" type="email" id="correo" name="correo" required placeholder="Correo electrónico">
+
+      <br><br>
+
+      <input class="campos" type="tel" id="telefono" name="telefono" placeholder="Teléfono">
+
+      <br><br>
+
+      <textarea class="campos mensaje" type="text" id="mensaje" name="mensaje" placeholder="Escribe tu mensaje"></textarea>
+
+      <br><br>
+
+      <input type="submit" value="Contacta" id="boton">
+  </form>
+
+</div>
+
+<p class="textos-html text-form">&lt;/form&gt;</p>
+
+<p class="textos-html section">&lt;/section&gt;</p>
+
+</section>
+
+<section id="final">
+
+  <p class="textos-html html-color body">&lt;/body&gt;</p>
+  <p class="textos-html html-color">&lt;/html&gt;</p>
+
+  </section>
+
+  <footer class="footer">
+    <ul class="social-icons">
+      <li><a href="https://www.linkedin.com/in/rub%C3%A9n-moreno-gallego-530902220/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></li></a>
+      <li><a href="https://www.behance.net/rubnmoreno3" target="_blank"><i class="fa-brands fa-behance"></i></li></a>
+      <li><a href="https://www.instagram.com/ruuub_/" target="_blank"><i class="fa-brands fa-instagram"></i></li></a>
+    </ul>
+    <p>¡Descubre más sobre mí en mis redes sociales y no dudes en escribirme para resolver cualquier duda!</p>
+    <hr>
+    <p>
+      <span class="email-icon">&#9993;</span>
+      <a class="email-footer" href="mailto:rubenmoreno1999@gmail.com">rubenmoreno1999@gmail.com</a>
+    </p>
+    <p>&copy; Rubén Moreno 2023 Todos los derechos reservados</p>
+  </footer>
+
+<a id="flecha" href="#arriba"><i class="fa-sharp fa-solid fa-arrow-up"></i></a>
+
+<!--JAVASCRIPT-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$('a[href^="#"]').on('click', function(e){
+			e.preventDefault();
+			
+			var $target = $(this.hash);
+			var positionTarget = $target.offset().top;
+
+			$('html, body').animate({scrollTop: positionTarget}, 1000);
+		});
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+  $('a[href^="#"]').on('click', function(e){
+    e.preventDefault();
+    
+    var $target = $(this.hash);
+    var positionTarget = $target.offset().top;
+
+    $('html, body').animate({scrollTop: positionTarget}, 500);
+  });
+</script>
+
+<script>
+  function abrirmenu(){
+ document.querySelector('#menuDesplegable').classList.toggle('menuabierto');
+ }
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$('a[href^="#"]').on('click', function(e){
+  e.preventDefault();
+  
+  var $target = $(this.hash);
+  var positionTarget = $target.offset().top;
+
+  $('html, body').animate({scrollTop: positionTarget}, 1000);
+});
+</script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+  AOS.init();
+</script>
+
+
+</body>
+</html>

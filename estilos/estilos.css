@@ -1,0 +1,763 @@
+html {
+    overflow-x: hidden;
+}
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: 'Cascadia Code';
+    font-style: normal;
+}
+.r {
+    width: 6%;
+    margin-left: 10%;
+    margin-top: 65px;
+    animation-name: erre;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-fill-mode: backwards;
+    margin-right: -5%;
+    margin-bottom: 50px;
+}
+video {  
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: fixed;   
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);  
+    z-index: -100;
+    background-size: cover;
+}
+header {
+    display: flex;
+}
+
+@keyframes erre {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/*MENU*/
+
+#menuDesplegable {
+    display: none;
+}
+#menu {
+    margin-top: 100px;
+    margin-left: 40%;
+    margin-right: 10%;
+    animation-name: menu;
+    animation-duration: 2s;
+    animation-delay: 0.8s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes menu {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+#menu a {
+    text-decoration: none;
+    color: white;
+    margin-left: 50px;
+    font-size: 1.5vw;
+}
+#menu a:hover {
+    text-decoration: underline;
+}
+
+/*FIN MENU*/
+
+#caja-presentacion {
+    width: 80%;
+    margin: auto;
+}
+
+/*TEXTOS HTML*/
+
+.textos-html {
+    color: #fee34a;
+    font-style: italic;
+
+    animation-name: textos;
+    animation-duration: 2s;
+    animation-delay: 1.1s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes textos {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.html-color {
+    color: #737aff;
+    margin-left: -6%;
+}
+.body {
+    color: #FF4F3D;
+    margin-left: -4%;
+}
+.section {
+    color: #B73DFF;
+    margin-left: -2%;
+}
+
+/*FIN TEXTOS HTML*/
+
+/*TEXTOS*/
+
+h1 {
+    color: white;
+    font-size: 5vw;
+
+    animation-name: haches;
+    animation-duration: 2s;
+    animation-delay: 1.5s;
+    animation-fill-mode: backwards;
+    
+}
+h2 {
+    color: white;
+    font-size: 3vw;
+
+    animation-name: haches;
+    animation-duration: 2s;
+    animation-delay: 1.5s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes haches {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+h3 {
+    color: white;
+    font-size: 2vw;
+}
+p {
+    color: white;
+    font-size: 1.2vw;
+}
+.informacion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.text-info {
+    width: 50%;
+}
+.retrato {
+    width: 30%;
+    margin-right: 10%;
+}
+.text-form {
+    color: #63FFAC;
+    margin-left: 2%;
+}
+
+/*FIN TEXTOS*/
+
+/*NIVELES DE HABILIDAD*/
+
+#quien-soy {
+    margin-top: 400px;
+}
+.titulo-habilidades {
+    margin-top: 100px;
+}
+.skills {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+  }
+  
+  .column {
+    flex: 1;
+    
+  }
+  
+  .skill {
+    margin-bottom: 10px;
+    width: 80%;
+    margin-top: 10%;
+  }
+  
+  .skill-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .skill-bar {
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .skill-progress {
+    height: 100%;
+    background-color: #ffdd00;
+  }
+  
+  
+
+/*FIN NIVELES DE HABILIDAD*/
+
+/*PROYECTOS*/
+
+#proyectos {
+    width: 80%;
+    margin: auto;
+    margin-top: 400px;
+}
+.imagen1 {
+    width: 30%;
+    margin-right: 3%;
+
+    -webkit-transition: all 1s ease;
+-moz-transition: all 1s ease;
+-ms-transition: all 1s ease;
+-o-transition: all 1s ease;
+transition: all 1s ease;
+}
+.imagen2 {
+    width: 30%;
+    margin-right: 2%;
+
+    -webkit-transition: all 1s ease;
+-moz-transition: all 1s ease;
+-ms-transition: all 1s ease;
+-o-transition: all 1s ease;
+transition: all 1s ease;
+}
+.imagen3 {
+    width: 30%;
+    margin-right: 3%;
+
+    -webkit-transition: all 1s ease;
+-moz-transition: all 1s ease;
+-ms-transition: all 1s ease;
+-o-transition: all 1s ease;
+transition: all 1s ease;
+}
+.imagen1:hover {
+-moz-transform: scale(1.3);
+-webkit-transform: scale(1.3);
+-o-transform: scale(1.3);
+-ms-transform: scale(1.3);
+transform: scale(1.3);
+}
+.imagen2:hover {
+    -moz-transform: scale(1.3);
+-webkit-transform: scale(1.3);
+-o-transform: scale(1.3);
+-ms-transform: scale(1.3);
+transform: scale(1.3);
+}
+.imagen3:hover {
+    -moz-transform: scale(1.3);
+-webkit-transform: scale(1.3);
+-o-transform: scale(1.3);
+-ms-transform: scale(1.3);
+transform: scale(1.3);
+}
+.texto-proyectos {
+    margin-bottom: 50px;
+}
+
+/*FIN PROYECTOS*/
+
+/*CONTACTO*/
+
+#contacto {
+    width: 80%;
+    margin: auto;
+}
+.flexContact {
+    margin: 100px auto;
+    display: flex;
+    width: 80%;
+}
+.texto-contacto {
+    width: 50%;
+    margin: auto;
+    margin-right: 10%;
+}
+.formulario1 {
+    width: 80%;
+    padding: 3%;
+}
+.campos {
+    width: 80%;
+    padding: 2%;
+}
+.mensaje {
+    height: 150px;
+}
+#boton {
+    display: block;
+    border:none;
+    background-color: rgb(255, 196, 0);
+    color: rgb(0, 0, 0);
+    font-family: 'Cascadia Code';
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 900;
+    padding: 10px 10%;
+    cursor: pointer;
+    -webkit-transition: all 1s ease;
+-moz-transition: all 1s ease;
+-ms-transition: all 1s ease;
+-o-transition: all 1s ease;
+transition: all 1s ease;
+}
+#boton:hover {
+    background-color: rgb(97, 97, 97);
+}
+#borrar:hover {
+    background-color: rgb(97, 97, 97);
+}
+::placeholder {
+    font-family: 'Cascadia Code';
+    font-style: normal;
+    font-size: 16px;
+  }
+
+/*FIN CONTACTO*/
+
+/*FRASE MOTIVADORA*/
+
+#frase-motivadora {
+    width: 80%;
+    margin: 400px auto;
+}
+
+/*FIN FRASE MOTIVADORA*/
+
+.frase-motivadora {
+    font-size: 2vw;
+    text-align: center;
+}
+
+/*FINAL*/
+
+#final {
+    width: 80%;
+    margin: auto;
+}
+
+/*FIN FINAL*/
+
+#flecha {
+    color: rgb(255, 255, 255);
+    font-size: 3vw;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    opacity: 0.4;
+    -webkit-transition: all 0.7s ease;
+-moz-transition: all 0.7s ease;
+-ms-transition: all 0.7s ease;
+-o-transition: all 0.7s ease;
+transition: all 0.7s ease;
+}
+#flecha:hover {
+    opacity: 1;
+}
+
+/*FOOTER*/
+
+.footer {
+    text-align: center;
+    background-color: black;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+    font-size: 14px;
+  }
+  .social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+  }
+  .social-icons li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  .social-icons li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 2vw;
+  }
+  .email-icon {
+    font-size: 20px;
+    color: white;
+  }
+  .email-footer {
+    
+    color: white;
+  }
+  hr {
+    width: 85%;
+    margin: 40px auto;
+  }
+
+
+
+
+
+/* Estilos para la barra de desplazamiento */
+::-webkit-scrollbar {
+    width: 15px; /* Anchura de la barra de desplazamiento */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: hsl(0, 0%, 83%); /* Color de fondo de la pista */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #151db1; /* Color del pulgar */
+    border-radius: 5px; /* Radio de esquina del pulgar */
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #737aff; /* Color del pulgar al pasar el ratón */
+  }
+
+
+
+  
+
+/*FIN DE FOOTER*/
+
+@media (max-width: 1280px) {
+
+    .r {
+        width: 10%;
+    }
+
+    /*MENU*/
+
+    #menu {
+        display: none;
+    }
+
+    #menuDesplegable {
+        width: 100%;
+        height: 180px;
+        overflow: hidden;
+        display: block;
+        position: fixed;
+        top: 0;
+        -webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-ms-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+transition: all 0.5s ease;
+    }
+    #menuDesplegable ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    #menuDesplegable a {
+        width: 100%;
+        font-family: 'Cascadia Code';
+        font-style: normal;
+        text-align: center;
+        font-size: 3vw;
+        display: block;
+        color: white;
+        text-decoration: none;
+        line-height: 100px;
+    }
+    #menuDesplegable i {
+        font-size: 4vw;
+        margin-left: 90%;
+        margin-top: 100px;
+
+    }
+    .menuabierto {
+        height: 500px!important;
+        background-color: black!important;
+    }
+
+    /*FIN MENU*/
+
+    /*TEXTOS*/
+
+    .textos-html {
+        font-size: 2vw;
+    }
+    h1 {
+        font-size: 8vw;
+    }
+    h2 {
+        font-size: 4vw;
+    }
+
+    /*FIN TEXTOS*/
+
+     /*QUIEN SOY*/
+
+     .informacion {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .text-info {
+        font-size: 2.2vw;
+        width: 100%;
+    }
+    .retrato {
+        width: 50%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    /*FIN QUIEN SOY*/
+
+    .frase-motivadora {
+        font-size: 4vw;
+    }
+
+    .texto-proyectos {
+        font-size: 2vw;
+        margin-bottom: 80px;
+    }
+
+    /*CONTACTO*/
+
+    .flexContact {
+        flex-direction: column;
+    }
+    .texto-contacto {
+        width: 100%;
+        font-size: 3vw;
+        margin-bottom: 50px;
+    }
+    .formulario1 {
+        width: 100%;
+    }
+
+    /*FIN CONTACTO*/
+
+    /*FOOTER*/
+
+.footer {
+    text-align: center;
+    background-color: black;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+    font-size: 5vw;
+  }
+  footer p {
+    font-size: 1.5vw;
+  }
+  .social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+  }
+  .social-icons li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  .social-icons li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 3vw;
+  }
+  .email-icon {
+    font-size: 2vw;
+    color: white;
+  }
+  .email-footer {
+    font-size: 2vw;
+    color: white;
+  }
+  hr {
+    width: 85%;
+    margin: 40px auto;
+  }
+  
+
+/*FIN DE FOOTER*/
+
+
+}
+
+ @media (max-width:768px) {
+
+    .r {
+        margin: auto;
+        margin-top: 35px;
+    margin-bottom: 30px;
+    }
+
+    /*MENU*/
+
+    #menu {
+        display: none;
+    }
+
+    #menuDesplegable {
+        display: none;
+    }
+
+    /*FIN MENU*/
+
+    /*TEXTOS*/
+
+    .textos-html {
+        font-size: 3vw;
+    }
+    h1 {
+        font-size: 10vw;
+    }
+    h2 {
+        font-size: 5vw;
+    }
+
+    /*FIN TEXTOS*/
+
+    /*QUIEN SOY*/
+
+    #quien-soy {
+        margin-top: 50px;
+    }
+    .informacion {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .text-info {
+        font-size: 3vw;
+        width: 100%;
+    }
+    .retrato {
+        width: 70%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .titulo-habilidades {
+        font-size: 5vw;
+    }
+    .skills {
+        flex-direction: column;
+    }
+    .skill-name {
+        font-size: 3vw;
+    }
+
+    /*FIN QUIEN SOY*/
+
+    /*PROYECTOS*/
+
+    #proyectos {
+        margin-top: 50px;
+    }
+    .imagen1 {
+        width: 100%;
+    }
+    .imagen2 {
+        width: 100%;
+    }
+    .imagen3 {
+        width: 100%;
+    }
+    .texto-proyectos {
+        font-size: 3vw;
+        margin-bottom: 80px;
+    }
+
+    /*FIN DE PROYECTOS*/
+
+    .frase-motivadora {
+        font-size: 5vw;
+    }
+
+    /*CONTACTO*/
+
+    .flexContact {
+        flex-direction: column;
+    }
+    .texto-contacto {
+        width: 100%;
+        font-size: 3vw;
+        margin-bottom: 50px;
+    }
+    .formulario1 {
+        width: 112%;
+    }
+
+    /*FIN CONTACTO*/
+
+    /*FOOTER*/
+
+.footer {
+    text-align: center;
+    background-color: black;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+    font-size: 5vw;
+  }
+  footer p {
+    font-size: 3vw;
+  }
+  .social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+  }
+  .social-icons li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  .social-icons li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 4vw;
+  }
+  .email-icon {
+    font-size: 4vw;
+    color: white;
+  }
+  .email-footer {
+    font-size: 4vw;
+    color: white;
+  }
+  hr {
+    width: 85%;
+    margin: 40px auto;
+  }
+  
+
+/*FIN DE FOOTER*/
+    
+ }

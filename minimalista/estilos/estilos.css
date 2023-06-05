@@ -1,0 +1,356 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.logo {
+    float: left;
+    width: 250px;
+    margin-left: 5%;
+}
+#menuDesplegable {
+    display: none;
+}
+#menu {
+    height: 100px;
+    width: 100%;
+}
+#menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: right;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 5%;
+}
+#menu a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 250px;
+    -webkit-transition: all 1s ease;
+-moz-transition: all 1s ease;
+-ms-transition: all 1s ease;
+-o-transition: all 1s ease;
+transition: all 1s ease;
+}
+#menu a:hover {
+    color: rgb(220, 220, 220);
+}
+.imagenCabecera {
+    width: 100%;
+}
+.subtituloSeccion {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 22px;
+    margin: auto;
+    text-align: center;
+}
+.frase {
+    width: 80%;
+    text-align: center;
+    margin: 100px auto;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 8vw;
+    font-weight: 100;
+    font-style: italic;
+}
+.iconos {
+    display: flex;
+    float: left;
+    color: black;
+    margin: 0 10px;
+}
+footer a {
+    display: block;
+    font-size: 20px;
+    color: black;
+    margin-right: 7px;
+}
+footer p {
+    float: right;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0 20px;
+}
+
+/*About*/
+main {
+    margin-top: 200px;
+}
+.retrato {
+    width: 20%;
+    margin: 20px auto 0 auto;
+    display: block;
+}
+.nombreChica {
+    text-align: center;
+    margin: 20px auto 10px auto;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.8vw;
+    font-weight: 700;
+}
+.diseñadora {
+    text-align: center;
+    margin: 0 auto 20px auto;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1vw;
+    font-weight: 400;
+    color: rgb(137, 137, 137);
+}
+.textoChica {
+    width: 50%;
+    text-align: center;
+    margin: 50px auto 50px auto;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1vw;
+    font-weight: 200;
+}
+
+/*Work*/
+
+.bloque1 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+.bloque1 img {
+    margin-top: 50px;
+    width: 40%;
+    -webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-ms-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+transition: all 0.5s ease;
+}
+.bloque1 img:hover {
+    opacity: 0.3;
+    cursor: pointer;
+}
+.bloque2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+.bloque2 img {
+    width: 40%;
+    -webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-ms-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+transition: all 0.5s ease;
+}
+.bloque2 img:hover {
+    opacity: 0.3;
+    cursor: pointer;
+}
+.fraseWork {
+    width: 80%;
+    text-align: center;
+    margin: 100px auto;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2vw;
+    font-weight: 100;
+    font-style: italic;
+}
+
+/*Contacto*/
+
+.flexContact {
+    margin: 100px auto;
+    display: flex;
+}
+.imagenContacto {
+    width: 25%;
+    margin: auto;
+}
+
+.formulario1 {
+    width: 50%;
+    background-color: white;
+    padding: 3%;
+}
+.campos {
+    width: 70%;
+    padding: 2%;
+}
+.mensaje {
+    height: 150px;
+}
+#boton {
+    display: block;
+    border:none;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 10px 10%;
+    cursor: pointer;
+}
+#boton:hover {
+    background-color: rgb(97, 97, 97);
+}
+#borrar:hover {
+    background-color: rgb(97, 97, 97);
+}
+::placeholder {
+    font-family: sans-serif;
+    font-size: 16px;
+  }
+
+@media (max-width: 1280px) {
+
+    .fraseWork {
+        font-size: 3vw;
+    }
+    .nombreChica {
+        font-size: 16px;
+    }
+    .diseñadora {
+        font-size: 16px;
+    }
+    .textoChica {
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    /*Menu*/
+
+    #menu {
+        display: none;
+    }
+
+    #menuDesplegable {
+        width: 100%;
+        height: 50px;
+        overflow: hidden;
+        display: block;
+        background-color: black;
+        position: fixed;
+        top: 0;
+        -webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-ms-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+transition: all 0.5s ease;
+    }
+    #menuDesplegable ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    #menuDesplegable a {
+        width: 100%;
+        font-family: 'Josefin Sans', sans-serif;
+        text-align: center;
+        display: block;
+        color: white;
+        text-decoration: none;
+        line-height: 50px;
+    }
+    .menuabierto {
+        height: 250px!important;
+    }
+
+    /*Todo*/
+
+    .logo {
+        float: none;
+        width: 50%;
+        margin: 50px auto 0;
+        display: block;
+    }
+    main {
+        margin-top: 0;
+    }
+    .iconos {
+        display: flex;
+        float: left;
+        color: black;
+        margin: 0 10px;
+    }
+    footer a {
+        display: block;
+        font-size: 4vw;
+        color: black;
+        margin-right: 15px;
+    }
+    footer p {
+        float: right;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 4vw;
+        font-weight: 400;
+        margin: 0 10px;
+    }
+    
+    /*About*/
+
+    .retrato {
+        width: 50%;
+    }
+    .nombreChica {
+        font-size: 7vw;
+    }
+    .diseñadora {
+        font-size: 4vw;
+    }
+    .textoChica {
+        width: 80%;
+        font-size: 4vw;
+    }
+
+    /*Work*/
+
+    .bloque1 {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .bloque1 img {
+        width: 90%;
+        margin: 20px auto;
+    }
+    .fraseWork {
+        font-size: 7vw;
+    }
+    .bloque2 {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .bloque2 img {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    /*Contact*/
+
+    .flexContact {
+        flex-direction: column;
+    }
+    .imagenContacto {
+        width: 90%;
+        margin: auto;
+    }
+    .formulario1 {
+        width: 90%;
+        margin: 20px auto 0;
+    }
+    .campos {
+        width: 100%;
+    }
+
+
+}

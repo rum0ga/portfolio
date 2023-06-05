@@ -1,0 +1,810 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    background-image: url("../imagenes/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+section {
+    margin-top: 0px!important;
+    padding-top: 50px;
+}
+#menumovil {
+    display: none;
+}
+#menu {
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    z-index: 900;
+    background: rgb(17,68,121);
+    background: linear-gradient(180deg, rgba(17,68,121,1) 0%, rgba(72,151,194,1) 100%);
+}
+#menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: right;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 5%;
+}
+#menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    line-height: 100px;
+    font-size: 1.1vw;
+    font-family: 'Supercell-Magic';
+    padding-bottom: 10px;
+}
+#menu a:hover {
+    opacity: 0.5;
+}
+.logo {
+    position: fixed;
+    left: 50px;
+    top: 25px;
+    width: 20%;
+    z-index: 901;
+}
+.cabecera {
+    margin-top: 80px;
+    width: 100%;
+}
+.cabeceramovil {
+    display: none
+}
+#titulohome h1 {
+    font-family: 'Supercell-Magic';
+    font-size: 1.8vw;
+    margin-top: 50px;
+    color: white;
+    text-align: center;
+    line-height: 80px;
+    text-shadow: 0 1px 4px #000000;
+    -webkit-text-stroke: 1.5px black;
+    height: 80px;
+    background: rgb(255,218,44);
+background: linear-gradient(180deg, rgba(255,218,44,1) 0%, rgba(255,166,12,1) 5%, rgba(255,166,12,1) 6%, rgba(255,166,12,1) 8%, rgba(255,208,83,1) 11%, rgba(255,208,83,1) 44%, rgba(255,188,40,1) 45%, rgba(255,188,40,1) 63%, rgba(236,168,57,1) 90%, rgba(237,159,30,1) 91%, rgba(174,103,4,1) 95%, rgba(174,103,4,1) 100%);
+}
+.contenidohome {
+    width: 80%;
+    height: 500px;
+    position: relative;
+    margin: auto;
+    margin-top: 50px!important;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    border: 15px solid #ffbc28;
+    box-shadow: 0 0 30px 0 rgb(249, 255, 136);
+    background: rgb(17,68,121);
+    background: linear-gradient(180deg, rgba(17,68,121,1) 0%, rgba(72,151,194,1) 100%);
+}
+.contenidohome img {
+    width: 30%;
+}
+.contenidohome p {
+    width: 45%;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-weight: 500;
+    font-size: 1vw;
+}
+.contenidohome .caballero {
+    position: absolute;
+    width: 220px;
+    top: 260px;
+    left: 90%;
+}
+#tituloapp h1 {
+    font-family: 'Supercell-Magic';
+    font-size: 1.8vw;
+    margin-top: 70px;
+    color: white;
+    text-align: center;
+    line-height: 80px;
+    text-shadow: 0 1px 4px #000000;
+    -webkit-text-stroke: 1.5px black;
+    height: 80px;
+    background: rgb(255,218,44);
+background: linear-gradient(180deg, rgba(255,218,44,1) 0%, rgba(255,166,12,1) 5%, rgba(255,166,12,1) 6%, rgba(255,166,12,1) 8%, rgba(255,208,83,1) 11%, rgba(255,208,83,1) 44%, rgba(255,188,40,1) 45%, rgba(255,188,40,1) 63%, rgba(236,168,57,1) 90%, rgba(237,159,30,1) 91%, rgba(174,103,4,1) 95%, rgba(174,103,4,1) 100%);
+}
+.contenidoapp {
+    width: 80%;
+    height: 1250px;
+    margin: auto;
+    margin-top: 50px!important;
+    border-radius: 10px;
+    border: 15px solid #ffbc28;
+    box-shadow: 0 0 30px 0 rgb(249, 255, 136);
+    background: rgb(17,68,121);
+    background: linear-gradient(180deg, rgba(17,68,121,1) 0%, rgba(72,151,194,1) 100%);
+    position: relative;
+}
+.contenidoapp1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+}
+.contenidoapptextos1 {
+    margin-top: 20px;
+}
+.contenidoapp .tituloepicas {
+    font-family: 'Supercell-Magic';
+    width: 65%;
+    font-size: 2.4vw;
+    margin-top: 20px;
+    margin: auto;
+    padding-right: 10%;
+    color: white;
+    text-shadow: 0 1px 4px #000000;
+    -webkit-text-stroke: 1.5px black;
+}
+.contenidoapp .textoepicas {
+    color: white;
+    margin: auto;
+    margin-top: 20px;
+    padding-right: 10%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1vw;
+    font-weight: 500;
+    width: 65%;
+}
+.contenidoapp .imagenepicas {
+    width: 20%;
+    margin-right: 15%;
+    
+}
+.contenidoapp2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+}
+.contenidoapp .imagendesbloquea {
+    width: 30%;
+    margin-left: 8%;
+}
+.contenidoapp .titulodesbloquea {
+    font-family: 'Supercell-Magic';
+    width: 60%;
+    font-size: 2.4vw;
+    margin: auto;
+    margin-top: 20px;
+    color: white;
+    text-shadow: 0 1px 4px #000000;
+    -webkit-text-stroke: 1.5px black;
+}
+.contenidoapp .textodesbloquea {
+    color: white;
+    margin: auto;
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1vw;
+    font-weight: 500;
+    width: 60%;
+}
+.contenidoapp3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+}
+.contenidoapp .titulonivel {
+    font-family: 'Supercell-Magic';
+    width: 60%;
+    font-size: 2.4vw;
+    margin-top: 50px;
+    margin: auto;
+    padding-right: 10%;
+    color: white;
+    text-shadow: 0 1px 4px #000000;
+    -webkit-text-stroke: 1.5px black;
+}
+.contenidoapp .textonivel {
+    color: white;
+    margin: auto;
+    margin-top: 20px;
+    padding-right: 10%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1vw;
+    font-weight: 500;
+    width: 60%;
+}
+.contenidoapp .imagennivel {
+    width: 30%;
+    margin-right: 8%;
+}
+.contenidoapp .pensando {
+    position: absolute;
+    width: 150px;
+    bottom: -60px;
+    left: -80px;
+}
+#titulogaleria h1 {
+    font-family: 'Supercell-Magic';
+    font-size: 1.8vw;
+    margin-top: 70px;
+    color: white;
+    text-align: center;
+    line-height: 80px;
+    text-shadow: 0 1px 4px #000000;
+    -webkit-text-stroke: 1.5px black;
+    height: 80px;
+    background: rgb(255,218,44);
+    background: linear-gradient(180deg, rgba(255,218,44,1) 0%, rgba(255,166,12,1) 5%, rgba(255,166,12,1) 6%, rgba(255,166,12,1) 8%, rgba(255,208,83,1) 11%, rgba(255,208,83,1) 44%, rgba(255,188,40,1) 45%, rgba(255,188,40,1) 63%, rgba(236,168,57,1) 90%, rgba(237,159,30,1) 91%, rgba(174,103,4,1) 95%, rgba(174,103,4,1) 100%);
+}
+video {
+    display: none;
+}
+.titulopersonajes {
+    font-family: 'Supercell-Magic';
+    font-size: 1.8vw;
+    color: white;
+    text-align: center;
+    text-shadow: 0 1px 4px #000000;
+    -webkit-text-stroke: 1.5px black;
+}
+#personajes {
+        width: 80%;
+    padding: 30px 20px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border-radius: 10px;
+    background: rgb(17,68,121);
+    background: linear-gradient(180deg, rgba(17,68,121,1) 0%, rgba(72,151,194,1) 100%);
+    border: 15px solid #ffbc28;
+    box-shadow: 0 0 30px 0 rgb(249, 255, 136);
+}
+.oculto {
+    display: none;
+}
+.visible {
+    display: block;
+}
+.boton {
+    width: 20%;
+}
+#personajes h2 {
+    font-family: 'Supercell-Magic';
+    font-size: 1vw;
+    color: white;
+    text-shadow: 0 1px 4px #000000;
+    -webkit-text-stroke: 1.5px black;
+}
+#personajes p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1vw;
+    color: white;
+}
+.cajaarquera {
+    width: 25%;
+    text-align: center;
+    padding: 25px;
+}
+.cajabebedragon {
+    width: 25%;
+    text-align: center;
+    padding: 25px;
+}
+.cajabruja {
+    width: 25%;
+    text-align: center;
+    padding: 25px;
+}
+.cajacaballo {
+    width: 25%;
+    text-align: center;
+    padding: 25px;
+}
+.cajaesqueleto {
+    width: 25%;
+    text-align: center;
+    padding: 25px;
+}
+.cajagigante {
+    width: 25%;
+    text-align: center;
+    padding: 25px;
+}
+.cajamago {
+    width: 25%;
+    text-align: center;
+    padding: 25px;
+}
+.cajamontapuercos {
+    width: 25%;
+    text-align: center;
+    padding: 25px;
+}
+.arquera {
+    width: 100%;
+}
+.bebedragon {
+    width: 100%;
+}
+.bruja {
+    width: 100%;
+}
+.caballo {
+    width: 100%;
+}
+.esqueleto {
+    width: 100%;
+}
+.gigante {
+    width: 100%;
+}
+.mago {
+    width: 100%;
+}
+.montapuercos {
+    width: 100%;
+}
+.muchosmas {
+    font-family: 'Supercell-Magic';
+    font-size: 1.5vw;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    color: white;
+    text-shadow: 0 1px 4px #000000;
+    -webkit-text-stroke: 1.5px black;
+}
+#galeriamovil {
+    display: none;
+}
+.dragon {
+    position: absolute;
+    z-index: 100;
+    width: 350px;
+    top: -87px;
+    left: 83%;
+}
+.contenidodescarga {
+    width: 80%;
+    height: 600px;
+    position: relative;
+    margin: auto;
+    margin-top: 100px!important;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    border: 15px solid #ffbc28;
+    box-shadow: 0 0 30px 0 rgb(249, 255, 136);
+    background: rgb(17,68,121);
+    background: linear-gradient(180deg, rgba(17,68,121,1) 0%, rgba(72,151,194,1) 100%);
+}
+.contenidodescarga .titulodescarga {
+    font-family: 'Supercell-Magic';
+    width: 60%;
+    margin: auto;
+    font-size: 2.4vw;
+    color: white;
+    text-shadow: 0 1px 4px #000000;
+    -webkit-text-stroke: 1.5px black;
+}
+.contenidodescarga .imagendescarga {
+    width: 40%;
+    margin-left: 26%;
+    margin-top: 30px;
+}
+.contenidodescarga .googleplay {
+    width: 100%;
+}
+.contenidodescarga .appstore {
+    width: 100%;
+}
+.contenidodescarga .mockupdescarga {
+    width: 35%;   
+    margin-right: 8%;
+}
+.centrardescargas {
+    width: 60%;
+}
+footer {
+    height: 150px;
+    background-color: #000000;
+    margin-top: 50px;
+    }
+.botonesdescargafooter {
+    margin-top: 20px;
+    margin-left: 10%!important;
+    width: 50%;
+    display: flex;
+
+}
+.googleplayfooter {
+    width: 150px;
+    margin-right: 20px;
+}
+.appstorefooter {
+    width: 150px;
+}
+.redessociales {
+    width: 50%;
+    padding-top: 20px;
+    margin-left: 28%;
+}
+.redessociales img {
+    width: 40px;
+}
+.flexfooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.instagram {
+    width: 2%;
+    padding: 3px;
+}
+.youtube {
+    width: 2%;
+    padding: 3px;
+}
+.twitter {
+    width: 2%;
+    padding: 3px;
+}
+.facebook {
+    width: 2%;
+    padding: 3px;
+}
+.textolegal {
+    font-family: 'Supercell-Magic';
+    text-align: center;
+    margin-top: 45px;
+    font-size: 0.8vw;
+    color: white;
+}
+
+@media (max-width:1280px) {
+
+    #menu a {
+        font-size: 15px;
+    }
+    .contenidohome p {
+        font-size: 1.42vw;
+    }
+    .contenidoapp {
+        height: 100%;
+        padding-bottom: 30px;
+    }
+    .contenidoapp .textoepicas {
+        font-size: 1.4vw;
+    }
+    .contenidoapp .textodesbloquea {
+        font-size: 1.4vw;
+    }
+    .contenidoapp .textonivel {
+        font-size: 1.4vw;
+    }
+    .contenidohome .caballero {
+        display: none;
+    }
+    .contenidoapp .pensando {
+        display: none;
+    }
+    #personajes h2 {
+        font-size: 1.5vw;
+    }
+    #personajes p {
+        font-size: 1.4vw;
+    }
+    .dragon {
+        display: none;
+    }
+
+}
+
+@media (max-width:768px) {
+
+    #menu {
+        display: none;
+    }
+        #menumovil {
+            display: block;
+            position: fixed;
+            z-index: 200;
+            width: 100%;
+            background: rgb(17,68,121);
+    background: linear-gradient(180deg, rgba(17,68,121,1) 0%, rgba(72,151,194,1) 100%);
+            color: white;
+            height: 50px;
+            overflow: hidden;
+            -webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-ms-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+transition: all 0.5s ease;
+        }
+        #menumovil ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        #menumovil a {
+            color: white;
+            text-align: center;
+            height: 50px;
+            display: block;
+            text-decoration: none;
+            line-height: 50px;
+            font-size: 2.4vw;
+            font-family: 'Supercell-Magic';
+        }
+        .menuabierto {
+            height: 250px!important;
+        }
+        #menumovil .enlaces {
+            -webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-ms-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+transition: all 0.5s ease;
+        }
+        #menumovil .enlaces:hover {
+            color: rgb(206, 206, 206);
+            font-size: 30px;
+        }
+        .botonmenu {
+            text-align: right!important;
+            margin-right: 40px;
+            font-size: 20px!important;
+            
+        }
+        .logo {
+            position: fixed;
+            left: 30px;
+            top: 20px;
+            width: 150px;
+            z-index: 901;
+        }
+        .cabecera {
+            display: none;
+        }
+        .cabeceramovil {
+            padding-top: 50px;
+            width: 100%;  
+            display: block;          
+        }
+        #titulohome h1 {
+            font-size: 13px;
+            margin-top: 40px;
+        }
+        .contenidohome {
+            width: 100%;
+            height: 870px;
+            display: flex;
+            flex-direction: column;
+            border-left: none;
+            border-right: none;
+            border-radius: 0;
+        }
+        .contenidohome img {
+            margin-top: 400px;
+            margin-bottom: 30px;
+            width: 270px;
+        }
+        .contenidohome p {
+            font-size: 16px;
+            width: 80%;
+            text-align: center;
+            margin-bottom: 400px;
+        }
+        .caballero {
+            display: none;
+        }
+        #tituloapp h1 {
+            font-size: 15px;
+            margin-top: 50px;
+        }
+        .contenidoapp {
+            border-left: none;
+            border-right: none;
+            border-radius: 0;
+            width: 100%;
+            height: 1650px!important;
+        }
+        .contenidoapp1 {
+            flex-direction: column;
+        }
+        .contenidoapp1 .tituloepicas {
+            font-size: 23px!important;
+            text-align: center;
+            padding: initial;
+            width: 80%;
+        }
+        .contenidoapp1 .textoepicas {
+            font-size: 16px!important;
+            text-align: center;
+            padding: initial;
+            width: 80%;
+        }
+        .contenidoapp1 .imagenepicas {
+            width: 50%!important;
+            margin: auto;
+            margin-top: 50px;
+        }
+        .contenidoapp2 {
+            flex-direction: column-reverse;
+            text-align: center;
+        }
+        .contenidoapp2 .titulodesbloquea {
+            font-size: 23px!important;
+            width: 80%;
+        }
+        .contenidoapp2 .textodesbloquea {
+            font-size: 16px!important;
+            width: 80%;
+        }
+        .contenidoapp2 .imagendesbloquea {
+            width: 65%!important;
+            margin: auto;
+            margin-top: 40px;
+        }
+        .contenidoapp3 {
+            flex-direction: column;
+            text-align: center;
+        }
+        .contenidoapp3 .titulonivel {
+            font-size: 23px!important;
+            padding: initial;
+            width: 80%;
+        }
+        .contenidoapp3 .textonivel {
+            font-size: 16px!important;
+            padding: initial;
+            width: 80%;
+        }
+        .contenidoapp3 .imagennivel {
+            width: 65%!important;
+            margin: auto;
+            margin-top: -50px;
+        }
+        .pensando {
+            display: none;
+        }
+        #titulogaleria h1 {
+            font-size: 15px;
+            margin-top: 50px;
+        }
+        #personajes {
+            display: none;
+        }
+        .titulopersonajes {
+            font-size: 20px;
+        }
+        #galeriamovil{
+            background:grey;
+            display: block;
+            padding:2%;
+            overflow:scroll;
+            background: rgb(17,68,121);
+    background: linear-gradient(180deg, rgba(17,68,121,1) 0%, rgba(72,151,194,1) 100%);
+    border: 15px solid #ffbc28;
+    box-shadow: 0 0 30px 0 rgb(249, 255, 136);
+    border-left: none;
+    border-right: none;
+
+        }
+        .galeriamovil2 {
+            display:flex;
+            width: 400%;
+            text-align: center;
+            
+        }
+        .columna {
+            width:32%;
+            padding: 1%;
+        }
+        .galeriamovil2 h1 {
+            font-size: 20px;
+            margin-top: 10%;
+            margin-left: 2%;
+            margin-right: 1%;
+        }
+        .galeriamovil2 h2 {
+            font-family: 'Supercell-Magic';
+            font-size: 16px;
+            color: white;
+            text-shadow: 0 1px 4px #000000;
+            -webkit-text-stroke: 1.5px black;
+        }
+        .galeriamovil2 p {
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            color: white;
+        }
+        #wowslider-container1 {
+            display: none!important;
+        }
+        video {
+            width: 100%;
+            display: block;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+        .dragon {
+            display: none;
+        }
+        .contenidodescarga .mockupdescarga {
+            width: 250px!important;
+            margin-bottom: 20px!important;
+            margin: auto;
+            margin-top: 0px;
+        }
+        .titulodescarga {
+            font-size: 20px!important;
+            width: 100%!important;
+            text-align: center;
+            margin-bottom: 20px!important;
+        }
+        .contenidodescarga {
+            width: 100%;
+            margin-top: 44px!important;
+            border-left: none;
+            border-right: none;
+            border-radius: 0;
+            flex-direction: column-reverse;
+            justify-content: center;
+        }
+        .contenidodescarga .imagendescarga {
+            width: 170px;
+            margin-top: 10px;
+            display: block;
+            margin: auto;
+        }
+        footer {
+            height: 100px;
+        }
+        .flexfooter {
+            margin: auto;
+        }
+        .botonesdescargafooter {
+            margin-left: 7%;
+            margin-top: 0px;
+            margin-top: 20px;
+        }
+        .redessociales {
+            width: 38%;
+            padding-top: 0px;
+            display: flex;
+            margin-top: 20px;
+            margin-left: 2%;
+        }
+        .redessociales img {
+            width: 30px;
+        }
+        .googleplayfooter {
+            width: 100px;
+            margin-right: 0;
+        }
+        .appstorefooter {
+            width: 100px;
+        }
+        
+        .textolegal {
+            font-size: 9px;
+            margin-top: 20px;
+        }
+        
+
+}
